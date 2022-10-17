@@ -5,10 +5,17 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
-        <body className='my-body-class'>
+        <Head/>
+        <body style={{margin: 0 + 'px'}}>
           <Main />
           <NextScript />
+          <style>
+            {`
+              * {
+                font-family: ‘Nunito’, sans-serif;
+              }
+            `}
+          </style>
         </body>
       </Html>
     )
